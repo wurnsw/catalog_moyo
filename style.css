@@ -1,0 +1,148 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: inherit;
+}
+
+body {
+  width: 1024px;
+  height: 1044px;
+}
+
+.header_menu {
+  height: 60px;
+  width: 1024;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+}
+
+.header_menu__logo {
+  margin: 10px 50px;
+  width: 40px;
+  height: 40px;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  margin: 22.5px;
+}
+
+.nav__item {
+  padding: 0px 10px 13px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.active,
+.nav__item:hover {
+  color: #00acdc;
+  border-bottom: 5px solid #00acdc;
+  border-radius: 2px;
+}
+
+.main__products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  margin: 50px 40px;
+  width: 944px;
+  height: 862px;
+}
+.main__card {
+  width: 198px;
+  height: 406px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 17px;
+  display: flex;
+  flex-direction: column;
+}
+.product__image {
+  width: 160px;
+  height: 134px;
+}
+
+.product__name {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  margin-top: 40px;
+}
+.product__code {
+  font-size: 10px;
+  color: #616070;
+  line-height: 14px;
+  font-weight: 400;
+  margin-top: 4px;
+}
+.product__rating {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+.product__stars {
+  display: flex;
+  gap: 4px;
+}
+
+.product__star {
+  background-image: url("./images/star-active.svg");
+  width: 15px;
+  height: 15px;
+  background-size: contain;
+}
+.product__stars :last-child {
+  background-image: url("./images/star.svg");
+}
+.product__review {
+  font-size: 10px;
+  color: black;
+  line-height: 14px;
+  font-weight: 400;
+}
+
+.product__price {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.price_text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #616070;
+}
+.price_cost {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.product__button {
+  width: 166px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #00acdc;
+  margin-top: 16px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  padding: 13px;
+  color: white;
+  transition: 200ms;
+}
+
+.product__button:hover {
+  color: #00acdc;
+  background-color: white;
+  border: 1px solid #00acdc;
+}
